@@ -93,9 +93,6 @@ body {
     margin: 0 auto;
 
     color: #ffffff;
-
-
-
     margin-top: 300px;
 }
 
@@ -107,20 +104,31 @@ body {
     margin-bottom: 264px;
 }
 
+.arowdbottom {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 4px 14px;
+    margin: 0 auto;
+    font-size: 18px;
+
+
+}
+
 .about {
     padding-top: 87px;
     padding-bottom: 97px;
+    display: flex;
 }
 
 .about__inner {
     display: flex;
     justify-content: space-between;
-
 }
 
-.about__background {
-    max-width: 440px;
-}
+.about__background {}
 
 .about__title {
     font-family: 'Natasha';
@@ -133,8 +141,12 @@ body {
     margin-bottom: 78px;
 }
 
-.about__title_2 {
-    opacity: 0.66;
+.info {
+    maxu-width: 467px;
+}
+
+.info-title {
+
     font-family: 'Natasha';
     font-size: 22px;
     font-weight: normal;
@@ -159,7 +171,8 @@ body {
 }
 
 .merit {
-    max-width: 400px;
+    
+
     display: flex;
     justify-content: space-between;
 }
@@ -222,3 +235,72 @@ body {
     color: #22241b;
     text-transform: uppercase;
 }
+
+.contact__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links__item a {
+
+    font-family: 'MuseoSansCyrl 300';
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    color: #204d15;
+    border-bottom: 1px solid #c6d6bb;
+    margin-bottom: 16px;
+    letter-spacing: 1.68;
+}
+
+.profile {
+
+    width: 64px;
+    height: 64px;
+    opacity: 0.08;
+    border-radius: 50%;
+    background-color: #204d15;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.profile__text {}
+
+.icon-Pizza {
+    color: #204d15;
+}
+
+.profile__text {
+
+    width: 165px;
+    height: 11px;
+    font-family: 'MuseoSansCyrl 300';
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    color: rgba(34, 36, 27, 0.72);
+
+}
+
+.skills__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__list_item {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: solid 1px #204d15;
+    
+}
+
+.skills__list_item::after {
+    width: 61px;
+    height: 61px;
+    border: solid 1px #204d15;
+} 
