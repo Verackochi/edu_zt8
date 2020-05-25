@@ -142,7 +142,7 @@ body {
 }
 
 .info {
-    maxu-width: 467px;
+    max-width: 467px;
 }
 
 .info-title {
@@ -171,7 +171,7 @@ body {
 }
 
 .merit {
-    
+
 
     display: flex;
     justify-content: space-between;
@@ -276,7 +276,7 @@ body {
 .profile__text {
 
     width: 165px;
-    height: 11px;
+
     font-family: 'MuseoSansCyrl 300';
     font-size: 14px;
     font-weight: 300;
@@ -286,21 +286,223 @@ body {
 
 }
 
+.skills {
+    padding-top: 97px;
+    padding-bottom: 83px;
+}
+
+.skills__title,
+.works__title {
+
+    width: 164px;
+
+    font-family: 'Natasha';
+    font-size: 37px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    margin-bottom: 68px;
+
+
+
+    color: #22241b;
+
+}
+
 .skills__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__item-big {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    border: solid 1px #204d15;
+    padding: 5px;
+
+
+}
+
+.skills__item-small {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: solid 1px #c6d6bb;
+}
+
+.skills__number {
+    display: block;
+    margin: 0 auto;
+    width: 28px;
+    height: 10px;
+    font-family: 'MuseoSansCyrl 100';
+    font-size: 13px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.23;
+    letter-spacing: 1.56px;
+    text-align: center;
+    color: #204d15;
+}
+
+.skills__text {
+
+
+    font-family: 'MuseoSansCyrl 900';
+    font-size: 15px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.8px;
+    color: rgba(34, 36, 27, 0.89);
+    text-transform: uppercase;
+
+}
+
+.works__inner {
     display: flex;
     justify-content: space-between;
 }
 
-.skills__list_item {
-    width: 51px;
-    height: 51px;
-    border-radius: 50%;
-    border: solid 1px #204d15;
-    
+.works__item_img {
+    width: 250px;
+    height: 250px;
 }
 
-.skills__list_item::after {
-    width: 61px;
-    height: 61px;
-    border: solid 1px #204d15;
-} 
+.works__overlay_title {
+    height: 11px;
+    font-family: 'MuseoSansCyrl 900';
+    font-size: 15px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.works__overlay_text {
+
+    font-family: 'MuseoSansCyrl 300';
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.works__item {
+    position: relative;
+}
+
+.works__overlay {
+
+    background: rgba(0, 0, 0, 0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works__item_img:hover .works__overlay {
+    opacity: 1;
+}
+
+.works__overlay_text {
+    font-family: 'MuseoSansCyrl 300';
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.23;
+    letter-spacing: 0.26px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.footer {
+    padding-top: 125px;
+    padding-bottom: 110px;
+}
+
+.footer__text {
+    opacity: 0.66;
+    font-family: 'MuseoSansCyrl 300';
+    font-size: 11px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    color: rgba(34, 36, 27, 0.66);
+    text-transform: uppercase;
+}
+
+
+.
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+        .container {
+            width: 1200;
+        }
+
+        .menu {
+            height: 0;
+            overflow: hidden;
+        }
+
+        .header__title {
+            max-width: 713px;
+            height: 0;
+        }  
+        
+        .skills__list {
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .works__inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer__text {
+            text-align: center;
+        }
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 520px;
+    }
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+}
