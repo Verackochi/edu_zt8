@@ -3,9 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>MYPORTFOLIO </title>
+    <meta name="description" content="Адаптив">
+    <meta name="keywords" content="flexbox, mobile, dev">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="images/social-023-round_whatsapp.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/images/social-023-round_whatsapp.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYPORTFOLIO</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -31,14 +38,14 @@
                 <p class="header__text">
                     верстка & frontend
                 </p>
-                <a class="arowdbottom" href="#">↓</a>
+                <a class="arowdbottom" href="about">↓</a>
             </div>
 
         </div>
 
 
     </header>
-    <section class="about">
+    <section class="about " id="about">
         <div class="container">
             <h2 class="about__title">обо мне</h2>
             <div class="about__inner">
@@ -64,70 +71,72 @@
                         in is aute irure dolor in reprehenderit in.
                     </p>
                 </div>
-            </div>
-            <div class="info">
-                <h3 class="info-title">
-                    Заслуги
-                </h3>
-                <div class="merit">
-                    <div class="merit__item">
-                        <div class="merit__item-big">
-                            <div class="merit__item-small">
-                                <span class="merit__number">75</span>
+
+                <div class="info">
+                    <h3 class="info-title">
+                        Заслуги
+                    </h3>
+                    <div class="merit">
+                        <div class="merit__item">
+                            <div class="merit__item-big">
+                                <div class="merit__item-small">
+                                    <span class="merit__number">75</span>
+                                </div>
                             </div>
+                            <p class="merit__text">
+                                Реализованных
+                                проектов
+                            </p>
                         </div>
-                        <p class="merit__text">
-                            Реализованных
-                            проектов
-                        </p>
+
+
+                        <div class="merit__item">
+                            <div class="merit__item-big">
+                                <div class="merit__item-small">
+                                    <span class="merit__number">154</span>
+                                </div>
+                            </div>
+                            <p class="merit__text">
+                                Положительных
+                                отзыва
+                            </p>
+                        </div>
+
+
+                        <div class="merit__item">
+                            <div class="merit__item-big">
+                                <div class="merit__item-small">
+                                    <span class="merit__number">8</span>
+                                </div>
+                            </div>
+                            <p class="merit__text">
+                                Лет <br>
+                                опыта
+                            </p>
+
+                        </div>
                     </div>
 
 
-                    <div class="merit__item">
-                        <div class="merit__item-big">
-                            <div class="merit__item-small">
-                                <span class="merit__number">154</span>
+                    <div class="contact">
+                        <h3 class="info-title">Связь</h3>
+                        <div class="contact__block">
+                            <ul class="links">
+                                <li class="links__item"><a href="#" target="_blank">freelance.ru/myname</a></li>
+                                <li class="links__item"><a href="#" target="_blank">vk.com/12343</a></li>
+                                <li class="links__item"><a href="mailto:info@sitename.ru">info@sitename.ru</a></li>
+                            </ul>
+
+                            <div class="profile">
+                                <span class="icon icon-Pizza"></span>
+                                <p class="profile__text">
+                                    Не стесняйтесь, пишите
+                                </p>
                             </div>
                         </div>
-                        <p class="merit__text">
-                            Положительных
-                            отзыва
-                        </p>
-                    </div>
-
-
-                    <div class="merit__item">
-                        <div class="merit__item-big">
-                            <div class="merit__item-small">
-                                <span class="merit__number">8</span>
-                            </div>
-                        </div>
-                        <p class="merit__text">
-                            Лет <br>
-                            опыта
-                        </p>
-
                     </div>
                 </div>
-
             </div>
-            <div class="contact">
-                <h3 class="info-title">Связь</h3>
-                <div class="contact__block">
-                    <ul class="links">
-                        <li class="links__item"><a href="#">freelance.ru/myname</a></li>
-                        <li class="links__item"><a href="#">vk.com/12343</a></li>
-                        <li class="links__item"><a href="#">info@sitename.ru</a></li>
-                    </ul>
-                </div>
-                <div class="profile">
-                    <span class="icon icon-Pizza"></span>
-                    <p class="profile__text">
-                        Не стесняйтесь, пишите
-                    </p>
-                </div>
-            </div>
-
         </div>
         </div>
     </section>
@@ -176,7 +185,7 @@
             <div class="works__list">
                 <div class="works__inner">
                     <div class="works__item">
-                        <img src="/images/stewart.jpg" alt="" class="works__item_img">
+                        <img src="../images/stewart.jpg" alt="" class="works__item_img">
                         <div class="works__overlay">
                             <h4 class="works__overlay_title">
                                 Название работы
@@ -213,12 +222,12 @@
                 </div>
             </div>
     </section>
-        <div class="container">
-            <footer class="footer">
-        <p class="footer__text">
-            2018-2099 / Смотрю в будущее
-        </p>
-        </div>
+    <div class="container">
+        <footer class="footer">
+            <p class="footer__text">
+                2018-2099 / Смотрю в будущее
+            </p>
+    </div>
     </footer>
 
 

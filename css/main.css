@@ -1,4 +1,4 @@
-@import 'fonts.css';
+
 
 
 * {
@@ -82,7 +82,7 @@ body {
 
 .header__title {
     display: block;
-    width: 713px;
+    max-width: 713px;
     height: 94px;
     font-family: 'Natasha';
     font-size: 49px;
@@ -113,14 +113,20 @@ body {
     padding: 4px 14px;
     margin: 0 auto;
     font-size: 18px;
-
-
 }
+
+.arowdbottom:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.2, 1.2);
+}
+
 
 .about {
     padding-top: 87px;
     padding-bottom: 97px;
     display: flex;
+    justify-content: s;
 }
 
 .about__inner {
@@ -128,7 +134,9 @@ body {
     justify-content: space-between;
 }
 
-.about__background {}
+.about__background {
+    max-width: 460px;
+}
 
 .about__title {
     font-family: 'Natasha';
@@ -141,9 +149,7 @@ body {
     margin-bottom: 78px;
 }
 
-.info {
-    max-width: 467px;
-}
+.info {}
 
 .info-title {
 
@@ -158,7 +164,7 @@ body {
 }
 
 .background__text {
-    width: 432px;
+
     font-family: 'MuseoSansCyrl 300';
     font-size: 15px;
     font-weight: 300;
@@ -171,15 +177,15 @@ body {
 }
 
 .merit {
-
-
     display: flex;
     justify-content: space-between;
 }
 
 .merit__item {
-    width: 105px;
     text-align: center;
+
+
+
 }
 
 .merit__item-big {
@@ -449,38 +455,38 @@ body {
 }
 
 
-.
+
 /* ------ Media Queries ------ */
 
 /* 992-1200px */
 @media screen and (max-width: 1200px) {
-        .container {
-            width: 1200;
-        }
+    .container {
+        max-width: 992;
+    }
 
-        .menu {
-            height: 0;
-            overflow: hidden;
-        }
+    .menu {
+        height: 0;
+        overflow: hidden;
+    }
 
-        .header__title {
-            max-width: 713px;
-            height: 0;
-        }  
-        
-        .skills__list {
-            display: flex;
-            flex-flow: row-reverse wrap-reverse;
-        }
+    .header__title {
+        max-width: 713px;
+        height: 0;
+    }
 
-        .works__inner {
-            display: flex;
-            flex-direction: column;
-        }
+    .skills__list {
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+    }
 
-        .footer__text {
-            text-align: center;
-        }
+    .works__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__text {
+        text-align: center;
+    }
 }
 
 /* 768-992px */
@@ -489,12 +495,47 @@ body {
         width: 700px;
     }
 
+    .header__top {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__title {
+        text-align: center;
+        margin-top: 49px;
+
+        margin-bottom: 100px;
+    }
+
+
+
+
+    .menu__list {
+        display: none;
+    }
+
+    .about__inner {
+        display: block;
+        justify-content: column;
+    }
+
+    .skills__list {
+        display: block;
+        justify-content: column;
+    }
+
+
 }
 
 /* 576-768px */
 @media screen and (max-width: 768px) {
     .container {
         width: 520px;
+    }
+
+    .rthhh {
+        dherhrth;
     }
 
 }
