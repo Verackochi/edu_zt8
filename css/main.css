@@ -189,8 +189,8 @@ body {
 }
 
 .merit__item-big {
-    width: 105px;
-    height: 105px;
+    width: 80px;
+    height: 80px;
     border: solid 1px #204d15;
     /* Rotate */
     -webkit-transform: rotate(-45deg);
@@ -198,14 +198,14 @@ body {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 7px;
+    padding-left: 7px;
 }
 
 
 .merit__item-small {
-    width: 83px;
-    height: 83px;
+    width: 63px;
+    height: 63px;
     border: solid 1px #c6d6bb;
 
     /* Rotate */
@@ -219,7 +219,7 @@ body {
 
 .merit__number {
     display: block;
-    padding: 30px;
+    padding: 20px;
     transform: rotate(-45deg);
     font-family: 'MuseoSansCyrl 100';
     font-size: 20px;
@@ -273,9 +273,11 @@ body {
 
 }
 
-.profile__text {}
+.profile__text {
 
-.icon-Pizza {
+}
+
+.icon-User {
     color: #204d15;
 }
 
@@ -403,6 +405,7 @@ body {
 
 .works__item {
     position: relative;
+    z-index: -2;
 }
 
 .works__overlay {
@@ -419,6 +422,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .works__item_img:hover .works__overlay {
